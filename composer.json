@@ -1,0 +1,38 @@
+{
+    "name": "castor/mime",
+    "description": "Mime Type support for your applications",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "keywords": ["php", "io", "golang", "php7"],
+    "authors": [
+        {
+            "name": "Matias Navarro Carter",
+            "email": "mnavarrocarter@gmail.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Castor\\Mime\\": "src"
+        },
+        "files": ["src/functions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Castor\\Mime\\": "tests"
+        }
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.6"
+    }
+}
